@@ -1,0 +1,111 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RadioGroup
+        android:id="@+id/accountTypeGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:id="@+id/radioCD"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="CD" />
+
+        <RadioButton
+            android:id="@+id/radioLoan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Loan" />
+
+        <RadioButton
+            android:id="@+id/radioChecking"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Checking Account" />
+    </RadioGroup>
+
+    <!-- Fields for CD -->
+    <EditText
+        android:id="@+id/cdAccountNumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="CD Account Number" />
+
+    <EditText
+        android:id="@+id/cdInitialBalance"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Initial Balance" />
+
+    <EditText
+        android:id="@+id/cdCurrentBalance"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Current Balance" />
+
+    <EditText
+        android:id="@+id/cdInterestRate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Interest Rate" />
+
+    <!-- Fields for Loan -->
+    <EditText
+        android:id="@+id/loanAccountNumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Loan Account Number" />
+
+    <EditText
+        android:id="@+id/loanInitialBalance"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Initial Balance" />
+
+    <EditText
+        android:id="@+id/loanCurrentBalance"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Current Balance" />
+
+    <EditText
+        android:id="@+id/loanPaymentAmount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Payment Amount" />
+
+    <EditText
+        android:id="@+id/loanInterestRate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Interest Rate" />
+
+    <!-- Fields for Checking Account -->
+    <EditText
+        android:id="@+id/checkingAccountNumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Checking Account Number" />
+
+    <EditText
+        android:id="@+id/checkingCurrentBalance"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Current Balance" />
+
+    <Button
+        android:id="@+id/btnSave"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Save" />
+
+    <Button
+        android:id="@+id/btnCancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cancel" />
+</LinearLayout>
